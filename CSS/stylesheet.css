@@ -1,0 +1,267 @@
+/************************************** FONTS **************************************/
+
+body {
+    font-family: "nexaregular", sans-serif;
+    font-size: 1em;
+    color: #606060;
+}
+
+
+/* FONTS */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+{
+    font-family: "nexabold", sans-serif;
+}
+
+h1,
+h2 {
+    font-size: 1.6em;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+
+
+/************************************** MENU **************************************/
+
+header img {
+    width: 10em;
+}
+
+.navigatie {
+    font-family: "nexabold", sans-serif;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #00d66c;
+}
+
+.navigatie a:hover {
+    color: #2800a0;
+}
+
+ul li {
+    list-style-type: none;
+    text-decoration: none;
+    display: inline;
+    padding-right: 1em;
+}
+
+
+/************************************** ZOEKBALK **************************************/
+
+.zoekbalk {
+    text-align: center;
+}
+
+[type=text] {
+    font-family: "nexaregular", sans-serif;
+    font-size: 1em;
+    color: black;
+    height: 2em;
+    width: 13em;
+    border: solid 0.5px #2800a0;
+    border-radius: 1em;
+    padding-left: 0.5em;
+}
+
+[type=submit] {
+    font-size: 1em;
+    background-color: #ff3268;
+    padding: 0.6em 1.3em 0.3em 1.3em;
+    border-bottom: solid 2px #CB315A;
+    border-radius: 4em;
+    color: white;
+    font-family: "nexabold";
+}
+
+[type=reset] {
+    font-size: 1em;
+    background-color: #fff;
+    padding: 0.6em 1.3em 0.3em 1.3em;
+    border: solid 2px #ff3268;
+    border-bottom: solid 3px #CB315A;
+    border-radius: 4em;
+    color: #606060;
+    font-family: "nexabold";
+}
+
+[type=submit]:hover, [type=reset]:hover {
+    background-color: #fd678f;
+    color: white;
+}
+
+[type=submit]:active, [type=reset]:active {
+    background-color: #fd678f;
+    margin-top: 0.2em;
+    transition: 0.3s;
+}
+
+
+
+
+
+/************************************** FILTERS **************************************/
+
+.filter-veld {
+    border: solid 1px #cccccc;
+    border-radius: 1em;
+    padding: 1em;
+}
+
+.toggle {
+    margin-top: 2em;
+    margin-bottom: 0em;
+    font-family: "nexaregular", sans-serif;
+    font-size: 1em;
+    background-color: #2800a0;
+    padding: 0.6em 1.3em 0.3em 1.3em;
+    width: 100%;
+    border-bottom: solid 2px #140549;
+    border-radius: 4em;
+    color: white;
+    font-family: "nexabold";
+}
+
+legend {
+    font-family: nexabold;
+    color: #00d66c;
+    font-size: 1em;
+}
+
+fieldset {
+    border: solid 2px #606060;
+    padding: 0.5em 0.2em 0.5em 0.2em;
+    border-radius: 1em;
+    margin-top: 1em;
+}
+
+fieldset:last-of-type {
+    margin-bottom: 1em;
+}
+
+[type:range] {
+    padding: 0em 1em 2em 1em;
+}
+
+.leestijd-filter {
+    padding: 0em 0.5em 0em 0.5em;
+    font-family: nexabold;
+    color: #00d66c;
+    font-size: 1em;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 25px;
+    background: #F7F7F7;
+    border: solid 2px #606060;
+    border-radius: 1em;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #00d66c;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #00d66c;
+    cursor: pointer;
+}
+
+
+/************************************** BODY **************************************/
+
+
+/************** FONTS & ICONS ***************/
+
+h1:first-of-type {
+    background-color: #F3E5D9;
+    padding: 1em;
+    margin: none;
+    color: #2800a0;
+}
+
+.introtekst {
+    padding: 1em;
+    font-size: 1em;
+    background-color: #F3E5D9;
+    color: #2800a0;
+}
+
+main h2 {
+    padding: 2.5em 0em 0em 0em;
+    color: #00d66c;
+}
+
+main h3 {
+    background-color: #2800a0;
+    color: #fff;
+    margin: 0em;
+    padding: 1em;
+}
+
+.xbekeken, .rating, .leestijd, .fas fa-eye, .fas fa-star, .fas fa-clock  {
+    display: inline;
+    color: black;
+    margin: 0em 2em 0em 0em;
+}
+
+
+/************** VERHALEN OVERZICHTSPAGINA ***************/
+
+article {
+    border: solid 2px #606060;
+    border-radius: 1em;
+    margin: 1em;
+    padding: 1em;
+}
+
+article img {
+
+    width: calc(100% + 2em);
+    margin: 0.5em -1em 0 -1em;
+    display: block;
+}
+
+article h3 {
+    width: calc(100% + 0em);
+    margin: 0 -1em;
+}
+
+article a {
+    color: #2800a0;
+    text-decoration: none;
+}
+
+article a:hover {
+    color: #ff3268;
+    text-decoration: none;
+}
+
+.fas.fa-eye, .fas.fa-star, .fas.fa-clock {
+    color: #ff3268;
+    font-size: 1.2em;
+}
+
+
+
+
