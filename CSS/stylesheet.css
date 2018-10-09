@@ -36,28 +36,29 @@ header img {
     width: 10em;
 }
 
-.navigatie {
-    font-family: "nexabold", sans-serif;
-    font-size: 1.2em;
-    text-decoration: none;
-    color: #00d66c;
+
+header ul li {
+    display: inline;
 }
 
-.navigatie a:hover {
+header ul li a{
+    font-family: "nexabold", sans-serif;
+    font-size: 1.2em;
+    color: #00d66c;
+    padding-right: 1em;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+header ul li a:hover {
     color: #2800a0;
 }
 
-ul li {
-    list-style-type: none;
-    text-decoration: none;
-    display: inline;
-    padding-right: 1em;
-}
 
 
 /************************************** ZOEKBALK **************************************/
 
-.zoekbalk {
+form:first-of-type {
     text-align: center;
 }
 
@@ -98,7 +99,7 @@ ul li {
     color: white;
 }
 
-[type=submit]:active, [type=reset]:active {
+[type=submit]:active, [type=reset]:active, [type=submit]:focus, [type=reset]:focus {
     background-color: #fd678f;
     margin-top: 0.2em;
     transition: 0.3s;
@@ -110,13 +111,13 @@ ul li {
 
 /************************************** FILTERS **************************************/
 
-.filter-veld {
+.filter {
     border: solid 1px #cccccc;
     border-radius: 1em;
     padding: 1em;
 }
 
-.toggle {
+button:first-of-type {
     margin-top: 2em;
     margin-bottom: 0em;
     font-family: "nexaregular", sans-serif;
@@ -219,7 +220,7 @@ main h3 {
     padding: 1em;
 }
 
-.xbekeken, .rating, .leestijd, .fas fa-eye, .fas fa-star, .fas fa-clock  {
+footer p, .fas fa-eye, .fas fa-star, .fas fa-clock  {
     display: inline;
     color: black;
     margin: 0em 2em 0em 0em;
