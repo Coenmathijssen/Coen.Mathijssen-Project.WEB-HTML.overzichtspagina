@@ -29,31 +29,49 @@ h3 {
 }
 
 
-
 /************************************** MENU **************************************/
 
 header img {
     width: 10em;
+    padding-top: 0.4em;
 }
 
-
-header ul li {
-    display: inline;
+ul {
+    padding: 0;
+    list-style: none;
 }
 
-header ul li a{
-    font-family: "nexabold", sans-serif;
-    font-size: 1.2em;
+.fas.fa-user,
+.far.fa-heart,
+.fas.fa-download {
     color: #00d66c;
-    padding-right: 1em;
+    font-size: 1.8em;
     text-decoration: none;
     list-style-type: none;
 }
 
-header ul li a:hover {
-    color: #2800a0;
+.fas.fa-user:hover,
+.far.fa-heart:hover,
+.fas.fa-download:hover {
+    color: #ff3268;
+    transition: 0.3s;
 }
 
+header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -2.3em;
+}
+
+header li {
+    margin: 0 0.7em;
+}
+
+nav {
+    border-bottom: solid 2px #00d66c;
+    width: calc(100%+ 2em);
+    margin: 0.5em -0.42em 2em -0.42em;
+}
 
 
 /************************************** ZOEKBALK **************************************/
@@ -67,10 +85,10 @@ form:first-of-type {
     font-size: 1em;
     color: black;
     height: 2em;
-    width: 13em;
     border: solid 0.5px #2800a0;
     border-radius: 1em;
     padding-left: 0.5em;
+    width: 58%;
 }
 
 [type=submit] {
@@ -94,27 +112,34 @@ form:first-of-type {
     font-family: "nexabold";
 }
 
-[type=submit]:hover, [type=reset]:hover {
+[type=submit]:hover,
+[type=reset]:hover {
     background-color: #fd678f;
     color: white;
 }
 
-[type=submit]:active, [type=reset]:active, [type=submit]:focus, [type=reset]:focus {
+[type=submit]:active,
+[type=reset]:active,
+[type=submit]:focus,
+[type=reset]:focus {
     background-color: #fd678f;
     margin-top: 0.2em;
     transition: 0.3s;
 }
 
 
-
-
-
 /************************************** FILTERS **************************************/
 
 .filter {
-    border: solid 1px #cccccc;
+    border: solid 3px #2800a0;
     border-radius: 1em;
     padding: 1em;
+    margin-top: -1em;
+}
+
+.fas.fa-angle-down {
+    margin-left: 1em;
+    font-size: 1.2em;
 }
 
 button:first-of-type {
@@ -123,7 +148,7 @@ button:first-of-type {
     font-family: "nexaregular", sans-serif;
     font-size: 1em;
     background-color: #2800a0;
-    padding: 0.6em 1.3em 0.3em 1.3em;
+    padding: 0.6em 1.3em 0.9em 1.3em;
     width: 100%;
     border-bottom: solid 2px #140549;
     border-radius: 4em;
@@ -138,7 +163,7 @@ legend {
 }
 
 fieldset {
-    border: solid 2px #606060;
+    border: solid 2px #cccccc;
     padding: 0.5em 0.2em 0.5em 0.2em;
     border-radius: 1em;
     margin-top: 1em;
@@ -199,13 +224,19 @@ h1:first-of-type {
     padding: 1em;
     margin: none;
     color: #2800a0;
+    width: calc(100%+ 2em);
+    margin: 2em -0.3em 0 -0.3em;
+    display: block;
 }
 
 .introtekst {
-    padding: 1em;
+    padding: 1em 1.6em 1.5em 1.6em;
     font-size: 1em;
     background-color: #F3E5D9;
     color: #2800a0;
+    width: calc(100%+ 2em);
+    margin: -2em -0.5em 0 -0.5em;
+    display: block;
 }
 
 main h2 {
@@ -213,39 +244,129 @@ main h2 {
     color: #00d66c;
 }
 
-main h3 {
-    background-color: #2800a0;
-    color: #fff;
-    margin: 0em;
-    padding: 1em;
-}
-
-footer p, .fas fa-eye, .fas fa-star, .fas fa-clock  {
+footer p,
+.fas fa-eye,
+.fas fa-star,
+.fas fa-clock {
     display: inline;
     color: black;
-    margin: 0em 2em 0em 0em;
+    margin: 0em 0.5em 0em 0em;
+    text-align: center;
 }
 
 
-/************** VERHALEN OVERZICHTSPAGINA ***************/
+/************** TOGGLE SCHAKELAAR - CREDIT PROTO.IO https://proto.io/freebies/onoff/
+***************/
+
+.onoffswitch {
+    position: relative;
+    width: 240px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    margin-left: auto;
+    margin-right: 1em;
+    margin-top: 3em;
+}
+
+.onoffswitch-checkbox {
+    display: none;
+}
+
+.onoffswitch-label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid #999999;
+    border-radius: 20px;
+}
+
+.onoffswitch-inner {
+    display: block;
+    width: 200%;
+    margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+
+.onoffswitch-inner:before,
+.onoffswitch-inner:after {
+    display: block;
+    float: left;
+    width: 50%;
+    height: 30px;
+    padding: 0;
+    line-height: 30px;
+    font-size: 1em;
+    color: white;
+    font-family: "nexabold", sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+.onoffswitch-inner:before {
+    content: "Willekeurige Volgorde Aan";
+    padding-left: 10px;
+    background-color: #00d66c;
+    color: #FFFFFF;
+}
+
+.onoffswitch-inner:after {
+    content: "Willekeurige Volgorde Uit";
+    padding-right: 10px;
+    background-color: #fff;
+    color: #606060;
+    text-align: right;
+}
+
+.onoffswitch-switch {
+    display: block;
+    width: 18px;
+    margin: 6px;
+    background: #FFFFFF;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 206px;
+    border: 2px solid #999999;
+    border-radius: 20px;
+    transition: all 0.3s ease-in 0s;
+}
+
+.onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+
+.onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-switch {
+    right: 0px;
+}
+
+
+/************** De artikelen en carousels
+***************/
 
 article {
     border: solid 2px #606060;
     border-radius: 1em;
     margin: 1em;
     padding: 1em;
+    width: 13em;
+    transform: rotate(90deg);
+    transform-origin: right top;
 }
 
 article img {
-
     width: calc(100% + 2em);
-    margin: 0.5em -1em 0 -1em;
+    margin: -0.5em -1em 0 -1em;
     display: block;
+    height: 11em;
 }
 
 article h3 {
     width: calc(100% + 0em);
-    margin: 0 -1em;
+    margin: 0.3em 0em 0em -1em;
+    color: #2800a0;
+    background-color: none;
+    padding-left: 1em;
 }
 
 article a {
@@ -258,11 +379,76 @@ article a:hover {
     text-decoration: none;
 }
 
-.fas.fa-eye, .fas.fa-star, .fas.fa-clock {
+.fas.fa-eye,
+.fas.fa-star,
+.fas.fa-clock {
     color: #ff3268;
     font-size: 1.2em;
 }
 
+.side-scroll {
+    width: 20em;
+    height: 54em;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transform: rotate(-90deg);
+    transform-origin: right top;
+    transform: rotate(-90deg) translateY(-23em);
+    margin-top: -5em;
+    margin-bottom: -15em;
+}
+
+section>h2 {
+    margin-top: 0em;
+}
+
+main section:first-of-type {
+    margin-bottom: -30em;
+}
 
 
 
+.meest-gelezen {
+    margin-bottom: -25em;
+}
+
+/************** CATEGORIEËN ***************/
+
+
+section:last-of-type {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+section:last-of-type>h2 {
+    flex-basis: 100%;
+    color: #2800a0;
+    margin-bottom: -0.5em;
+}
+
+
+figure>img {
+    max-width: 10em;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    flex-basis: auto;
+    margin: auto -2em;
+
+}
+
+figure>figcaption {
+    max-width: 10em;
+    background-color: #00d66c;
+    padding: 0.05em;
+    margin: auto -2em;
+    margin-top: -0.5em;
+
+    text-align: center;
+    color: white;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    flex-basis: auto;
+    justify-content: flex-end;
+    overflow: hidden;
+}

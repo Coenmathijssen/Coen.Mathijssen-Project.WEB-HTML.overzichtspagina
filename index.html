@@ -31,20 +31,31 @@
 
     <header>
 
-
-        <img src="afbeeldingen/Logo_for_Transavia.svg.png" class="logo" alt="logo Transavia">
-
         <nav>
+
+            <a href="index.html"><img src="afbeeldingen/transavia-logo.svg" class="logo" alt="logo Transavia"></a>
+
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="inloggen-inschrijven.html">Inloggen/Aanmelden</a></li>
+
+                <li>
+                    <a href="inloggen-inschrijven.html">
+                        <i class="fas fa-user"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="inloggen-inschrijven.html">
+                        <i class="fas fa-download"></i>
+                    </a>
+                </li>
             </ul>
         </nav>
-
-
-        <h1>99 verhalen voor op reis</h1>
-
-
 
 
         <form>
@@ -55,7 +66,7 @@
         </form>
 
 
-        <button>Filter uitklappen</button>
+        <button>Filter uitklappen <i class="fas fa-angle-down"></i></button>
         <form class="filter">
             <fieldset>
                 <legend>Gevoel</legend>
@@ -108,8 +119,22 @@
 
     <main>
 
-
+        <h1>99 verhalen voor op reis</h1>
         <p class="introtekst"> Lees hier 99 prachtige verhalen voor tijdens de reis. Ervaar de prachtige vormgeving, wisselende schrijfstijlen en emoties. </p>
+
+
+
+
+
+        <div class="onoffswitch">
+    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+    <label class="onoffswitch-label" for="myonoffswitch">
+        <span class="onoffswitch-inner"></span>
+        <span class="onoffswitch-switch"></span>
+    </label>
+</div>
+
+
 
 
         <section>
@@ -117,79 +142,131 @@
             <h2>Gebasseerd op eerder gelezen verhalen</h2>
 
 
-            <article>
+            <div class="side-scroll">
+                <article>
 
-                <footer>
-                    <i class="fas fa-eye"></i>
-                    <p>49k</p>
+                    <img src="afbeeldingen/verhaal-visueel-2-01.png" alt="Verhaal-gevisualiseerd">
 
-                    <i class="fas fa-star"></i>
-                    <p>7.2</p>
+                    <footer>
+                        <i class="fas fa-eye"></i>
+                        <p>49k</p>
 
-                    <i class="fas fa-clock"></i>
-                    <p>7min</p>
-                </footer>
+                        <i class="fas fa-star"></i>
+                        <p>7.2</p>
 
-                <img src="afbeeldingen/verhaal-visueel-2-01.png" alt="Verhaal-gevisualiseerd">
+                        <i class="fas fa-clock"></i>
+                        <p>7min</p>
+                    </footer>
 
-                <h3>Notitie</h3>
+                    <h3>Notitie</h3>
 
-                <p>Bus 21, rond het middaguur. Halte Centraal Station. Mijn zoon slaapt in zijn kinderwagen. Ik loop langs de winderige bouwputten naar de Openbare Bibliotheek. Voor de trap van de bibliotheek klampt een vrouw mij aan. Zwart krullend haar. In stokbrodenengels vraagt ze waar het postkantoor is. Ik...</p>
-
-                <a href="#"> <i class="fas fa-angle-right"></i> Lees 'Notitie' verder</a>
-
-            </article>
+                </article>
 
 
 
-            <article>
 
-                <footer>
-                    <i class="fas fa-eye"></i>
-                    <p>32k</p>
+                <article>
 
-                    <i class="fas fa-star"></i>
-                    <p>9.2</p>
+                    <img src="afbeeldingen/verhaal-visueel-2-01.png" alt="Verhaal-gevisualiseerd">
 
-                    <i class="fas fa-clock"></i>
-                    <p>1min</p>
-                </footer>
+                    <footer>
+                        <i class="fas fa-eye"></i>
+                        <p>49k</p>
 
-                <img src="afbeeldingen/verhaal-visueel-2-01.png" alt="Verhaal-gevisualiseerd">
+                        <i class="fas fa-star"></i>
+                        <p>7.2</p>
 
-                <h3>Essentie</h3>
+                        <i class="fas fa-clock"></i>
+                        <p>7min</p>
+                    </footer>
 
-                <p>Mijn zoektocht naar Stijloefeningen van Raymond Queneau brengt mij bij de bibliotheek. Een Franse vrouw (zwart krullend haar) vraagt waar het postkantoor is. Ik zeg dat ze naar de Raadhuisstraat moet. Ze rent achter een auto aan. Je vindt nooit wat je zoekt.</p>
+                    <h3>Notitie</h3>
 
-                <a href="#"> <i class="fas fa-angle-right"></i> Lees 'Essentie' verder</a>
-
-            </article>
+                </article>
 
 
 
-            <article>
+                <article>
 
-                <footer>
-                    <i class="fas fa-eye"></i>
-                    <p>32k</p>
+                    <img src="afbeeldingen/verhaal-visueel-2-01.png" alt="Verhaal-gevisualiseerd">
 
-                    <i class="fas fa-star"></i>
-                    <p>7.9</p>
+                    <footer>
+                        <i class="fas fa-eye"></i>
+                        <p>49k</p>
 
-                    <i class="fas fa-clock"></i>
-                    <p>3min</p>
+                        <i class="fas fa-star"></i>
+                        <p>7.2</p>
 
-                </footer>
+                        <i class="fas fa-clock"></i>
+                        <p>7min</p>
+                    </footer>
 
-                <img src="afbeeldingen/verhaal-visueel-2-01.png" alt="Verhaal-gevisualiseerd">
+                    <h3>Notitie</h3>
 
-                <h3>Droom</h3>
+                </article>
 
-                <p>Slierten mist zwerven rond mijn benen. Net zat ik nog in Bus 21. Het was warm, zweet parelde langs mijn slapen, mijn zoon sliep. Nu loop ik over een smal pad langs eindeloos diepe bouwputten. Een heipaal beukt zich een weg naar het binnenste van mijn oor. Lachende Japanners passeren mij. Een van...</p>
 
-                <a href="#"> <i class="fas fa-angle-right"></i> Lees 'Droom' verder</a>
+                <article class="artikelen-mobiel">
 
-            </article>
+                    <img src="afbeeldingen/verhaal-visueel-2-01.png" alt="Verhaal-gevisualiseerd">
+
+                    <footer>
+                        <i class="fas fa-eye"></i>
+                        <p>49k</p>
+
+                        <i class="fas fa-star"></i>
+                        <p>7.2</p>
+
+                        <i class="fas fa-clock"></i>
+                        <p>7min</p>
+                    </footer>
+
+                    <h3>Notitie</h3>
+
+                </article>
+
+
+
+                <article>
+
+                    <img src="afbeeldingen/verhaal-visueel-2-01.png" alt="Verhaal-gevisualiseerd">
+
+                    <footer>
+                        <i class="fas fa-eye"></i>
+                        <p>49k</p>
+
+                        <i class="fas fa-star"></i>
+                        <p>7.2</p>
+
+                        <i class="fas fa-clock"></i>
+                        <p>7min</p>
+                    </footer>
+
+                    <h3>Notitie</h3>
+
+                </article>
+
+
+
+                <article>
+
+                    <img src="afbeeldingen/verhaal-visueel-2-01.png" alt="Verhaal-gevisualiseerd">
+
+                    <footer>
+                        <i class="fas fa-eye"></i>
+                        <p>49k</p>
+
+                        <i class="fas fa-star"></i>
+                        <p>7.2</p>
+
+                        <i class="fas fa-clock"></i>
+                        <p>7min</p>
+                    </footer>
+
+                    <h3>Notitie</h3>
+
+                </article>
+            </div>
 
         </section>
 
@@ -197,86 +274,188 @@
 
 
 
-        <section>
+        <section class="meest-gelezen">
 
             <h2>Meest gelezen verhalen</h2>
 
 
+            <div class="side-scroll">
+                <article>
 
-            <article>
+                    <img src="afbeeldingen/verhaal-visueel-2-01.png" alt="Verhaal-gevisualiseerd">
 
-                <footer>
-                    <i class="fas fa-eye"></i>
-                    <p>162k</p>
+                    <footer>
+                        <i class="fas fa-eye"></i>
+                        <p>49k</p>
 
-                    <i class="fas fa-star"></i>
-                    <p>8.8</p>
+                        <i class="fas fa-star"></i>
+                        <p>7.2</p>
 
-                    <i class="fas fa-clock"></i>
-                    <p>6min</p>
-                </footer>
+                        <i class="fas fa-clock"></i>
+                        <p>7min</p>
+                    </footer>
 
-                <img src="afbeeldingen/verhaal-visueel-2-01.png" alt="Verhaal-gevisualiseerd">
+                    <h3>Notitie</h3>
 
-                <h3>Verrast</h3>
-
-                <p>Precies op het moment dat ik de bus uit stap valt mijn zoon in slaap! Wat een timing, ongefuckinglooflijk! Gelukkig slaapt hij vrij diep, want wat een chaos op het Centraal Station zeg! Overal opgebroken wegen en borende wegwerkers en heiende heipalen! Ik loop naar de Openbare...</p>
-
-                <a href="#"> <i class="fas fa-angle-right"></i> Lees 'Verrast' verder</a>
-
-            </article>
+                </article>
 
 
 
-            <article>
 
-                <footer>
-                    <i class="fas fa-eye"></i>
-                    <p>147k</p>
+                <article>
 
-                    <i class="fas fa-star"></i>
-                    <p>8.2</p>
+                    <img src="afbeeldingen/verhaal-visueel-2-01.png" alt="Verhaal-gevisualiseerd">
 
-                    <i class="fas fa-clock"></i>
-                    <p>8min</p>
-                </footer>
+                    <footer>
+                        <i class="fas fa-eye"></i>
+                        <p>49k</p>
 
-                <img src="afbeeldingen/verhaal-visueel-2-01.png" alt="Verhaal-gevisualiseerd">
+                        <i class="fas fa-star"></i>
+                        <p>7.2</p>
 
+                        <i class="fas fa-clock"></i>
+                        <p>7min</p>
+                    </footer>
 
-                <h3>Verhalend</h3>
+                    <h3>Notitie</h3>
 
-                <p>Het was op het midden van de dag dat ik uit bus 21 stapte. Halte Amsterdam Centraal. Mijn zoon sliep in zijn kinderwagen. Drommen mensen kozen hun weg van en naar de stad. Ik liep langs de bouwputten, langs het drijvende Chinese restaurant. Heipalen beukten in de koude grond. Eentonig, drammerig. Wind snijdt door mijn jas, regen geselt mijn gezicht. Op naar de Openbare Bibliotheek...</p>
-
-                <a href="#"> <i class="fas fa-angle-right"></i> Lees 'Verhalend' verder</a>
-
-            </article>
+                </article>
 
 
 
-            <article>
+                <article>
 
-                <footer>
-                    <i class="fas fa-eye"></i>
-                    <p>106k</p>
+                    <img src="afbeeldingen/verhaal-visueel-2-01.png" alt="Verhaal-gevisualiseerd">
 
-                    <i class="fas fa-star"></i>
-                    <p>8.3</p>
+                    <footer>
+                        <i class="fas fa-eye"></i>
+                        <p>49k</p>
 
-                    <i class="fas fa-clock"></i>
-                    <p>10min</p>
-                </footer>
+                        <i class="fas fa-star"></i>
+                        <p>7.2</p>
 
-                <img src="afbeeldingen/verhaal-visueel-2-01.png" alt="Verhaal-gevisualiseerd">
+                        <i class="fas fa-clock"></i>
+                        <p>7min</p>
+                    </footer>
 
-                <h3>Hardboiled</h3>
+                    <h3>Notitie</h3>
 
-                <p>Het is snikheet in die godverdomde bus. Stinkend zweet vermengd met de geur van klamme jassen en natte hond. Mijn zoon slaapt. Goddank. Een hardnekkige kater bonkt tegen mijn slapen. Flashback naar de avond ervoor. Een fles goedkope whiskey en oude kaaskoekjes. Ik stap uit. Centraal Station, de anus van Amsterdam. Pneumatisch geboor trilt zich een weg naar mijn buis van Eustachius. De koppijn...</p>
+                </article>
 
-                <a href="#"> <i class="fas fa-angle-right"></i> Lees 'Hardboiled' verder</a>
 
-            </article>
+                <article class="artikelen-mobiel">
 
+                    <img src="afbeeldingen/verhaal-visueel-2-01.png" alt="Verhaal-gevisualiseerd">
+
+                    <footer>
+                        <i class="fas fa-eye"></i>
+                        <p>49k</p>
+
+                        <i class="fas fa-star"></i>
+                        <p>7.2</p>
+
+                        <i class="fas fa-clock"></i>
+                        <p>7min</p>
+                    </footer>
+
+                    <h3>Notitie</h3>
+
+                </article>
+
+
+
+                <article>
+
+                    <img src="afbeeldingen/verhaal-visueel-2-01.png" alt="Verhaal-gevisualiseerd">
+
+                    <footer>
+                        <i class="fas fa-eye"></i>
+                        <p>49k</p>
+
+                        <i class="fas fa-star"></i>
+                        <p>7.2</p>
+
+                        <i class="fas fa-clock"></i>
+                        <p>7min</p>
+                    </footer>
+
+                    <h3>Notitie</h3>
+
+                </article>
+
+
+
+                <article>
+
+                    <img src="afbeeldingen/verhaal-visueel-2-01.png" alt="Verhaal-gevisualiseerd">
+
+                    <footer>
+                        <i class="fas fa-eye"></i>
+                        <p>49k</p>
+
+                        <i class="fas fa-star"></i>
+                        <p>7.2</p>
+
+                        <i class="fas fa-clock"></i>
+                        <p>7min</p>
+                    </footer>
+
+                    <h3>Notitie</h3>
+
+                </article>
+            </div>
+
+        </section>
+
+
+
+        <section>
+
+        <h2> Probeer ook eens deze categorieën: </h2>
+
+        <figure>
+            <img src="afbeeldingen/grimmig.jpeg" alt="categorie grimmig"/>
+
+            <figcaption>
+                <h3>Grimmig</h3>
+            </figcaption>
+        </figure>
+
+
+        <figure>
+            <img src="afbeeldingen/grof.jpeg" alt="categorie grof"/>
+
+            <figcaption>
+                <h3>Grof</h3>
+            </figcaption>
+        </figure>
+
+
+        <figure>
+            <img src="afbeeldingen/kleurrijk.jpeg" alt="categorie kleurrijk"/>
+
+            <figcaption>
+                <h3>Kleurrijk</h3>
+            </figcaption>
+        </figure>
+
+
+        <figure>
+            <img src="afbeeldingen/lachen.jpeg" alt="categorie lachen"/>
+
+            <figcaption>
+                <h3>Lachen</h3>
+            </figcaption>
+        </figure>
+
+
+        <figure>
+            <img src="afbeeldingen/poetisch.jpeg" alt="categorie poetisch"/>
+
+            <figcaption>
+                <h3>Poetisch</h3>
+            </figcaption>
+        </figure>
 
 
         </section>
