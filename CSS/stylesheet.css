@@ -52,7 +52,6 @@ ul {
 
 .fas.fa-user:hover,
 .far.fa-heart:hover,
-<<<<<<< HEAD
 .fas.fa-download:hover,
 .fas.fa-user:focus,
 .far.fa-heart:focus,
@@ -60,9 +59,7 @@ ul {
 .fas.fa-user:active,
 .far.fa-heart:active,
 .fas.fa-download:active {
-=======
-.fas.fa-download:hover {
->>>>>>> origin/master
+
     color: #ff3268;
     transition: 0.3s;
 }
@@ -71,21 +68,17 @@ header nav ul {
     display: flex;
     justify-content: flex-end;
     margin-top: -2.3em;
-<<<<<<< HEAD
 }
 
 header li {
     margin: 0 0.7em;
 }
 
-=======
-}
 
 header li {
     margin: 0 0.7em;
 }
 
->>>>>>> origin/master
 nav {
     border-bottom: solid 2px #00d66c;
     width: calc(100%+ 2em);
@@ -107,11 +100,8 @@ form:first-of-type {
     border: solid 0.5px #2800a0;
     border-radius: 1em;
     padding-left: 0.5em;
-<<<<<<< HEAD
     width: 52%;
-=======
     width: 58%;
->>>>>>> origin/master
 }
 
 [type=submit] {
@@ -273,11 +263,8 @@ footer p,
 .fas fa-star,
 .fas fa-clock {
     display: inline;
-<<<<<<< HEAD
     color: #202020;
-=======
     color: black;
->>>>>>> origin/master
     margin: 0em 0.5em 0em 0em;
     text-align: center;
 }
@@ -295,7 +282,6 @@ footer p,
     margin-left: auto;
     margin-right: 1em;
     margin-top: 3em;
-<<<<<<< HEAD
 }
 
 .onoffswitch-checkbox {
@@ -332,8 +318,6 @@ footer p,
     box-sizing: border-box;
 }
 
-=======
-}
 
 .onoffswitch-checkbox {
     display: none;
@@ -369,7 +353,6 @@ footer p,
     box-sizing: border-box;
 }
 
->>>>>>> origin/master
 .onoffswitch-inner:before {
     content: "Willekeurige Volgorde Aan";
     padding-left: 10px;
@@ -423,18 +406,15 @@ article {
 
 article img {
     width: calc(100% + 2em);
-<<<<<<< HEAD
     margin: -1em -1em 0.5em -1em;
     border-top-left-radius: 0.8em;
     border-top-right-radius: 0.8em;
     display: block;
     height: 11em;
     object-fit: cover;
-=======
-    margin: -0.5em -1em 0 -1em;
+    margin: -1em -1em 0.5em -1em;
     display: block;
     height: 11em;
->>>>>>> origin/master
 }
 
 article h3 {
@@ -480,7 +460,6 @@ article a:hover {
     margin-top: -5em;
     margin-bottom: -15em;
 }
-<<<<<<< HEAD
 
 section>h2 {
     margin-top: 0em;
@@ -707,22 +686,18 @@ main section:last-of-type {
 }
 
 
-
-=======
->>>>>>> origin/master
-
 section>h2 {
     margin-top: 0em;
 }
 
 main section:first-of-type {
-    margin-bottom: -30em;
+    margin-bottom: 0em;
 }
 
 
 
 .meest-gelezen {
-    margin-bottom: -25em;
+    margin-bottom: 0em;
 }
 
 /************** CATEGORIEËN ***************/
