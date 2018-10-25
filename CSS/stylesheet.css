@@ -52,7 +52,17 @@ ul {
 
 .fas.fa-user:hover,
 .far.fa-heart:hover,
+<<<<<<< HEAD
+.fas.fa-download:hover,
+.fas.fa-user:focus,
+.far.fa-heart:focus,
+.fas.fa-download:focus,
+.fas.fa-user:active,
+.far.fa-heart:active,
+.fas.fa-download:active {
+=======
 .fas.fa-download:hover {
+>>>>>>> origin/master
     color: #ff3268;
     transition: 0.3s;
 }
@@ -61,12 +71,21 @@ header nav ul {
     display: flex;
     justify-content: flex-end;
     margin-top: -2.3em;
+<<<<<<< HEAD
 }
 
 header li {
     margin: 0 0.7em;
 }
 
+=======
+}
+
+header li {
+    margin: 0 0.7em;
+}
+
+>>>>>>> origin/master
 nav {
     border-bottom: solid 2px #00d66c;
     width: calc(100%+ 2em);
@@ -88,7 +107,11 @@ form:first-of-type {
     border: solid 0.5px #2800a0;
     border-radius: 1em;
     padding-left: 0.5em;
+<<<<<<< HEAD
+    width: 52%;
+=======
     width: 58%;
+>>>>>>> origin/master
 }
 
 [type=submit] {
@@ -214,6 +237,7 @@ fieldset:last-of-type {
 }
 
 
+
 /************************************** BODY **************************************/
 
 
@@ -249,7 +273,11 @@ footer p,
 .fas fa-star,
 .fas fa-clock {
     display: inline;
+<<<<<<< HEAD
+    color: #202020;
+=======
     color: black;
+>>>>>>> origin/master
     margin: 0em 0.5em 0em 0em;
     text-align: center;
 }
@@ -267,6 +295,7 @@ footer p,
     margin-left: auto;
     margin-right: 1em;
     margin-top: 3em;
+<<<<<<< HEAD
 }
 
 .onoffswitch-checkbox {
@@ -303,6 +332,44 @@ footer p,
     box-sizing: border-box;
 }
 
+=======
+}
+
+.onoffswitch-checkbox {
+    display: none;
+}
+
+.onoffswitch-label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid #999999;
+    border-radius: 20px;
+}
+
+.onoffswitch-inner {
+    display: block;
+    width: 200%;
+    margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+
+.onoffswitch-inner:before,
+.onoffswitch-inner:after {
+    display: block;
+    float: left;
+    width: 50%;
+    height: 30px;
+    padding: 0;
+    line-height: 30px;
+    font-size: 1em;
+    color: white;
+    font-family: "nexabold", sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+>>>>>>> origin/master
 .onoffswitch-inner:before {
     content: "Willekeurige Volgorde Aan";
     padding-left: 10px;
@@ -356,9 +423,18 @@ article {
 
 article img {
     width: calc(100% + 2em);
+<<<<<<< HEAD
+    margin: -1em -1em 0.5em -1em;
+    border-top-left-radius: 0.8em;
+    border-top-right-radius: 0.8em;
+    display: block;
+    height: 11em;
+    object-fit: cover;
+=======
     margin: -0.5em -1em 0 -1em;
     display: block;
     height: 11em;
+>>>>>>> origin/master
 }
 
 article h3 {
@@ -372,6 +448,13 @@ article h3 {
 article a {
     color: #2800a0;
     text-decoration: none;
+    visibility: hidden;
+    position: absolute;
+}
+
+article > p:last-of-type {
+    visibility: hidden;
+    position: absolute;
 }
 
 article a:hover {
@@ -397,6 +480,236 @@ article a:hover {
     margin-top: -5em;
     margin-bottom: -15em;
 }
+<<<<<<< HEAD
+
+section>h2 {
+    margin-top: 0em;
+    padding-bottom: 0.5em;
+}
+
+main section:first-of-type {
+    margin-bottom: -30em;
+}
+
+.meest-gelezen {
+    margin-bottom: -25em;
+}
+
+
+/************** CATEGORIEËN ***************/
+
+section:last-of-type {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+section:last-of-type>h2 {
+    flex-basis: 100%;
+    color: #2800a0;
+    margin-bottom: 0.5em;
+}
+
+figure>img {
+    max-width: 7.5em;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    flex-basis: auto;
+    margin: auto -2em;
+}
+
+figure>figcaption {
+    max-width: 7.5em;
+    background-color: #00d66c;
+    padding: 0.05em;
+    margin: auto -2em;
+    margin-top: -0.5em;
+    text-align: center;
+    color: white;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    flex-basis: auto;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+
+/************** IPAD BREAKPOINT ***************/
+
+@media screen and (min-width: 44rem) {
+    .side-scroll {
+        width: auto;
+        height: auto;
+        overflow-y: auto;
+        overflow-x: auto;
+        transform: rotate(0deg);
+        transform-origin: right top;
+        transform: rotate(0deg);
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    article {
+        border: solid 2px #606060;
+        box-sizing: border-box;
+        border-radius: 1em;
+        margin: 1em;
+        padding: 1em;
+        width: 20em;
+        transform: rotate(0deg);
+        transform-origin: right top;
+    }
+
+    main section article:first-of-type {
+        display: none;
+    }
+
+    main section:first-of-type {
+        margin-bottom: auto;
+    }
+
+    .meest-gelezen {
+        margin-bottom: auto;
+    }
+
+
+    article a {
+    visibility: visible;
+        position: relative;
+}
+
+article > p:last-of-type {
+    visibility: visible;
+    position: relative;
+}
+
+    main section div {
+        display: grid;
+        grid-template-columns: repeat(2, 19em);
+        grid-column-gap: 2rem;
+        grid-row-gap: 0rem;
+    }
+
+
+
+
+
+/************** FILTERS ***************/
+
+
+.filter {
+    border: solid 3px #2800a0;
+    border-radius: 1em;
+    padding: 1em;
+    margin-top: -1em;
+}
+
+button:first-of-type {
+    display: none;
+    }
+
+    form [type=submit], form [type=reset] {
+        display: none;
+    }
+
+legend {
+    font-family: nexabold;
+    color: #00d66c;
+    font-size: 1em;
+}
+
+fieldset {
+    border: solid 2px #cccccc;
+    padding: 0.5em 0.2em 0.5em 0.2em;
+    border-radius: 1em;
+    margin-top: 1em;
+}
+
+fieldset:last-of-type {
+    margin-bottom: 1em;
+}
+
+[type:range] {
+    padding: 0em 1em 2em 1em;
+}
+
+.leestijd-filter {
+    padding: 0em 0.5em 0em 0.5em;
+    font-family: nexabold;
+    color: #00d66c;
+    font-size: 1em;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 25px;
+    background: #F7F7F7;
+    border: solid 2px #606060;
+    border-radius: 1em;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #00d66c;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #00d66c;
+    cursor: pointer;
+}
+
+
+
+    .filter {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-column-gap: 0rem;
+    }
+
+
+
+}
+
+
+
+
+/************** LAPTOP BREAKPOINT ***************/
+
+@media screen and (min-width: 65rem) {
+
+main section div {
+        display: grid;
+        grid-template-columns: repeat(3, 19em);
+        grid-column-gap: 2rem;
+        grid-row-gap: 0rem;
+    }
+
+
+}
+
+main section:first-of-type {
+    margin-bottom: 5em;
+}
+
+main section:last-of-type {
+    margin-top: 5em;
+}
+
+
+
+=======
+>>>>>>> origin/master
 
 section>h2 {
     margin-top: 0em;
